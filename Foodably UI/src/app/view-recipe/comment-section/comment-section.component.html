@@ -1,0 +1,38 @@
+<!-- @author: SNEHA JAYAVARDHINI -->
+<div class="user-comment">
+    <div class="comments-section">
+       <div>
+          <h2> Comments</h2>
+          <ul  *ngFor="let com of comments">
+            <div class="comment-post">
+              <div class="comment-background"><h3 class="comment-author-initial">{{com.user.name | slice:0:1}}</h3></div>
+              <div class="comment-details">
+                <p><span class="comment-author">{{com.user.name}}</span>
+                  <span class="comment-time">{{com.createdAt | date:'medium' : ' GMT-3'}}</span>
+                  <span class="comment-edit-delete"><img src="assets/img/Icons/delete.png" (click)="onDelete(com.id)"></span>
+<!--                  <span class="comment-edit-delete" ng-click="editing = true" ><img src="assets/img/Icons/edit.png" ></span>-->
+                </p>
+                <p class="comment-content">{{com.comment}}</p>
+                <div class="comment-like-unlike">
+                  <span class="like" ><img src="assets/img/like.svg" (click)="like(com)"></span>
+                  <span><label class="like-count">{{com.like}}</label></span>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <form #commentForm="ngForm" (ngSubmit)="onComment(commentForm)">
+        <div class="comment-add">
+            <div class="field-comment">
+                <textarea rows="4" cols="50" id="comment-area"
+                name="comment" class="form-control" placeholder="Write your comment"
+                [(ngModel)]="commentDesc" minlength="2" maxlength="=200" required>
+                </textarea>
+                <button  class="btn--blue btn-medium" [disabled]="!commentForm.valid">
+                Post Your Comment
+                </button>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>

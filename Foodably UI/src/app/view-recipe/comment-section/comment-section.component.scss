@@ -1,0 +1,137 @@
+// @author: SNEHA JAYAVARDHINI
+.user-comment {
+    width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.comments-section img {
+    margin-top: 0px;
+    width: 60px;
+}
+
+.comments-section h2 {
+    line-height: 15px;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 30px;
+}
+.comment-author-initial{
+  margin-left: 15px;
+}
+.comments-section p{
+  line-height: 2px;
+  margin-top: 15px;
+}
+
+.comments-section .comment-author {
+    letter-spacing: 0.5px;
+    color: #547ef8;
+}
+
+.comments-section .comment-time {
+    margin-left: 10px;
+    color: #a7a5a5;
+    border-bottom: 1px solid #ddd;
+}
+
+.comments-section .comment-content {
+    padding-bottom: 0px;
+    letter-spacing: 1px;
+    color: #888888;
+    overflow-wrap: break-word;
+    line-height: 20px;
+
+
+}
+.comment-edit-delete img{
+  height: 20px;
+  cursor: pointer;
+  width: 20px;
+  float: right;
+}
+.comment-edit-delete{
+  margin-right: 50px;
+}
+
+.comment-background{
+  color: #b52f2f;
+  width: 3rem;
+  background: burlywood;
+  position: absolute;
+  float: left;
+  height: 3rem;
+  border-radius:7px ;
+
+}
+
+.comments-section .comment-post-reply .comment-content,
+.comments-section .comment-post-reply .comment-author {
+    color: #888888;
+
+}
+
+.comments-section textarea {
+    width: 80%;
+    height: 80px;
+    border: 1px solid #ccccccad;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.comment-like-unlike span i {
+    font-size: 18px;
+    color: #547ef89e;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+.like img{
+  cursor: pointer;
+  width: 22px;
+  margin-right: 5px;
+}
+.comment-post,
+.comment-post-reply {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.comment-details {
+    margin-left: 70px;
+    width: 70%;
+}
+
+.comment-post-reply {
+    margin-left: 85px;
+    margin-bottom: 40px;
+}
+
+.comments-section {
+    padding-top: 40px;
+    border-top: 1px solid #cccccc8a;
+    margin-left: 12%;
+}
+.comment-add{
+  padding-left: 15px;
+}
+.comments-section .btn--blue {
+    -webkit-box-shadow: 0 3px 32px rgba(85, 126, 248, .54);
+    box-shadow: 0 3px 32px rgba(85, 126, 248, .54);
+    background-color: #557ef8;
+    padding: 0 40px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    float: right;
+    margin-right: 200px;
+    border: none;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
